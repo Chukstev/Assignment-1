@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Altschoolafrica Registration Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        padding-top: 80px;
+      }
+      header {
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        padding: 20px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      nav ul li a {
+        color: black;
+        text-decoration: none;
+      }
+      .welcome {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+      }
+      #intro {
+        background-color: #fefcf7;
+        width: 50%;
+      }
+      .bg-img {
+        background-image: url(Assets/Images/New\ Altschool.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 480px;
+        height: 350px;
+        margin: 100px auto;
+      }
+      .form-base {
+        width: 50%;
+        padding: 60px 40px;
+      }
+      .form-base h1 {
+        margin-bottom: 10px;
+      }
+      .form-base p {
+        color: rgba(128, 128, 128, 0.896);
+        margin: 10px 0;
+      }
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 40px;
+      }
+      .form-grid p {
+        grid-column: span 2;
+      }
+      .form-grid a {
+        color: rgb(50, 152, 247);
+      }
+      .form-grid a:visited {
+        color: rgb(50, 152, 247);
+      }
+      .form-grid button {
+        padding: 15px;
+        grid-column: span 2;
+        background-color: #0566F1;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 18px;
+        transition-duration: 0.3s;
+      }
+      .form-grid button:hover {
+        background-color: black;;
+      }
+      .grid-items input {
+        width: 100%;
+        padding: 12px;
+        border: 0.1px solid rgba(128, 128, 128, 0.337);
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+      .grid-items input:active {
+        border-color:#0566F1;
+      }
+      .grid-items select {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        border: 0.1px solid rgba(128, 128, 128, 0.337);
+        border-radius: 4px;
+      }
+      .channel {
+        grid-column: span 2;
+      }
+      .channel input {
+        width: 100%;
+        padding: 12px;
+        border: 0.2px solid rgba(128, 128, 128, 0.337);
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+      .s-m {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        color: #0566F1;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 130px;
+      }
+      .s-m a {
+        color: rgb(50, 152, 247);
+      }
+      .s-m a:visited {
+        color: rgb(50, 152, 247);
+      }
+      footer {
+        text-align: center;
+        margin-top: 30px;
+      }
+     footer p {
+      font-weight: 600;
+     }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CHUKWUEMEKA STEPHEN ANOWAI</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="form.html">Application Form</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="welcome">
+      <div id="intro">
+        <div class="bg-img"></div>
+        <h1 style="font-weight: 500; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center; width: 500px; font-size: 50px; margin: -70px auto;">Learn highly sought after skills without hassle.</h1>
+        <ul class="s-m">
+          <li><a href="https://x.com/St_Chuka"><i class="fa-brands fa-twitter"></i></a></i></li>
+          <li><a href="https://www.instagram.com/even_ekka/profilecard/?igsh=MWlxOXppc3NucHYwMA=="><i class="fa-brands fa-instagram"></i></a></i></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100092276573122&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/chukwuemeka-anowai-084768332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+        <footer>
+          <p>2024 &copy AltSchool Africa. All rights reserved.</p>
+        </footer>
+      </div>
+      <div class="form-base">
+        <p style="color: black; float: right; margin-top: -50px;">Already an AltSchooler? <a href="#">Sign in!</a></p>
+        <h2>Sign up</h2>
+        <p>Take the next steps to apply at AltSchool Africa</p>
+        <form class="form-grid" action="/submit" method="post">
+          <div class="grid-items">
+            <label for="firstname">First Name</label><br />
+            <input
+              type="text"
+              id="firstname"
+              placeholder="Enter first name"
+              required
+            />
+            <p id="error"></p>
+          </div>
+          <div class="grid-items">
+            <label for="lastname">Last Name</label><br />
+            <input
+              type="text"
+              id="lastname"
+              placeholder="Enter last name"
+              required
+            />
+            <p id="error"></p>
+          </div>
+          <div class="grid-items">
+            <label for="email">Email Address</label><br />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter email address"
+              required
+            />
+          </div>
+          <div class="grid-items">
+            <label for="gender">Gender</label><br />
+            <select id="gender">
+              <option value="">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <p id="error"></p>
+          </div>
+          <div class="grid-items">
+            <label for="dob">Date of Birth</label><br />
+            <input type="date" id="dob" required />
+          </div>
+          <div class="grid-items">
+            <label for="phone">Phone Number</label><br />
+            <input
+              type="tel"
+              id="phone"
+              placeholder="08114234354"
+              required
+            />
+          </div>
+          <div class="grid-items">
+            <label for="nationality">Country of Residence</label><br />
+            <input type="text" id="nationality" placeholder="Country of Residence"required />
+          </div>
+          <div class="grid-items">
+            <label for="sor">State of Residence</label><br />
+            <input
+              type="text"
+              id="sor"
+              placeholder="State of Residence"
+              required
+            />
+          </div>
+          <div class="grid-items">
+            <label for="password">Password</label><br />
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter password"
+              required
+            />
+          </div>
+          <div class="grid-items">
+            <label for="confirm">Confirm Password</label><br />
+            <input
+              type="password"
+              id="confirm"
+              placeholder="Enter password again"
+              required
+            />
+          </div>
+          <div class="channel"">
+            <label for="info">How Did You Hear About Us?</label><br />
+            <input type="text" id="info" placeholder="Optional: Let us know how you found us">
+          </div>
+          <p>
+            By clicking By clicking continue, I agree to
+            <a href="terms.html">Terms of Use</a> and acknowledge that I have
+            read the <a href="policy.html">Privacy Policy</a>.
+          </p>
+          <button type="submit">Sign Up  <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
